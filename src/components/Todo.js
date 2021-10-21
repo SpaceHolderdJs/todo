@@ -39,7 +39,11 @@ export default function Todo({ todo }) {
       <ListItemText>
         {editing ? (
           <>
-            <Input onChange={(e) => setValue(e.target.value)} value={value} />
+            <Input
+              onChange={(e) => setValue(e.target.value)}
+              value={value}
+              sx={{ color: "lemonchiffon" }}
+            />
             <IconButton
               onClick={() => {
                 dispatch({
